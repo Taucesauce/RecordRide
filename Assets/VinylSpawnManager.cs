@@ -10,7 +10,7 @@ public class VinylSpawnManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         recordMesh = RecordPlatform.GetComponent<MeshFilter>();
-
+        //TODO: Invoke at speed that matches BPM of track
         InvokeRepeating("SpawnRecordGrooves", 1.0f, 1.0f);
 	}
 	
